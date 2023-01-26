@@ -22,7 +22,7 @@ Na base de dados foi utilizado uma instancia do SqlServer e foi criada uma base 
 Nesse projeto a instância é executada através do docker podendo ter sua imagem baixada pelo arquivo "docker-compose.yaml"
 Caso não tenha o docker instalado é possível seguir o seguinte [Tutorial](https://docs.docker.com/get-started/)
 
-### 🔧 Instalação
+### 🔧 Configuração e Instalação
 
 Durante a criação do projeto foram executados os seguintes passos para viabilizar o desenvolvimento do mesmo:
 
@@ -32,6 +32,8 @@ Durante a criação do projeto foram executados os seguintes passos para viabili
 - Executar a instancia do SqlServer via [docker-compose.yaml (Docker)](https://docs.docker.com/compose/gettingstarted/). 
 - Utilizar o comando de "update database" do entity para criar as tabelas mapeadas nos modelos. 
 - (Opcional) Instalar o SqlServer management ou um conector de bancos de dados para manipulação dos dados. No meu caso eu usei o [DBeaver](https://dbeaver.io/download/).
+
+As variáveis de da string de conexão referente a credenciais da base de dados foram criadas com o comando [dotnet user-secrets](https://learn.microsoft.com/pt-br/aspnet/core/security/app-secrets?view=aspnetcore-7.0&tabs=windows) inserindo assim os dados de UserId e Password
 
 ## 🛠️ Construído com
 
